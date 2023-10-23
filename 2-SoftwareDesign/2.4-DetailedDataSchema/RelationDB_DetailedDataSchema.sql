@@ -33,13 +33,19 @@ CREATE TABLE user
     cvv2 INT,
     customer_id INT UNIQUE,
     operator_id INT UNIQUE,
-    CHECK (age > 0 AND age < 125),
-    CHECK (LENGTH(num_card) = 16),
-    CHECK (YEAR(valid_per) >= 2023),
-    CHECK (LENGTH(cvv2) = 3),
-    CHECK (name REGEXP '^[A-Za-z\\-]+$'),
-    CHECK (surname REGEXP '^[A-Za-z\\-]+$'),
+    CONSTRAINT check_age CHECK (age > 0 AND age < 125),
+    CONSTRAINT check_num_card CHECK (LENGTH(num_card) = 16),
+    CONSTRAINT check_valid_per CHECK (YEAR(valid_per) >= 2023),
+    CONSTRAINT check_cvv2 CHECK (LENGTH(cvv2) = 3),
+    CONSTRAINT check_name CHECK (name REGEXP '^[A-Za-z\\-]+$'), 
+    CONSTRAINT check_surname CHECK (surname REGEXP '^[A-Za-z\\-]+$'),
     FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
     FOREIGN KEY (operator_id) REFERENCES operator(operator_id)
 );
+
+ALTER TABLE operator
+ADD CONSTRAINT fk_customer_id
+FOREIGN KEY (customer_id)
+REFERENCES customer(customer_id);
+
 
