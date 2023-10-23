@@ -9,7 +9,7 @@ CREATE TABLE customer
 (
     customer_id INT PRIMARY KEY,
     email VARCHAR(30),
-    CONSTRAINT check_email_domain CHECK (Email ~ '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$'),
+    CONSTRAINT check_email_domain CHECK (email ~ '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$'),
     operator_id INT REFERENCES operator(operator_id),
     FOREIGN KEY (operator_id) REFERENCES operator(operator_id)
 );
