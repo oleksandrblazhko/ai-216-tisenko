@@ -1,0 +1,42 @@
+@startuml
+
+hide circle
+title Classes
+
+Class User {
+    name
+    surname
+    age
+    num_card
+    val_per
+    cvv2
+}
+
+Class Operator {
+    
+}
+
+Class Customer {
+    email
+}
+
+Class Humidifier{
+    name_h
+    price
+}
+
+User <|-- Operator
+
+User <|-- Customer
+
+Operator"1" --> "+"Customer : to notify
+
+Customer"1" --> "1"Operator : to inform 
+
+Customer"1" --> "1"Operator : to provide 
+
+Customer"1" --> "+"Humidifier: to pay
+
+
+
+@enduml
