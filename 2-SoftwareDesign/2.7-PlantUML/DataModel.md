@@ -1,1 +1,1 @@
-![](https://www.plantuml.com/plantuml/png/bL1DImCn4BtdLmmzjM0l_eA2A48FYk9v6R9J4yXiGZuMfVZVZRDBir2fTY_pU6_Vl3VPfOmn5tOgs-m8xZ-GGvt-02_aC5i_mAisnAYKiJs1jb4xKeg6QlY4rLkYk09CK18S5THl_RpVtC3wOR-f7CNEza9ljp86P1AGIZnXVAT9BDnfZ9DXHDS5YeBrEDukjyXsNLBst1A4zDM2sGlvrMe-pRHKzU6iQlFzh-wbCilSkvcMN7t-HiruJJ0nMjV-ldpwOs7RsuETInXUT00pYx_cTqPWY5R_UR0FLJr2IHFw0RgaXfegI3VTXvDkMErew0kxRm00)
+![](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/oleksandrblazhko/ai-216-tisenko/laboratory-work-7/2-SoftwareDesign/2.7-PlantUML/DataModel.puml)
